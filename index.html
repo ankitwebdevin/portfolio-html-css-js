@@ -385,17 +385,32 @@
 
     <!-- form -->
 
-    <script
-      src="https://rovgmdwz.formester.com/widget/standard.js"
-      type="module"
-    ></script>
-
-    <formester-standard-form
-      set-auto-height="true"
-      height="100%"
-      id="efa9251a-39c7-4923-8c78-f17485f2efd7"
-      url="https://rovgmdwz.formester.com/f/efa9251a-39c7-4923-8c78-f17485f2efd7"
-    ></formester-standard-form>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+          <div id="nameError" class="error"></div>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <div id="emailError" class="error"></div>
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+          <div id="subjectError" class="error"></div>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <div id="messageError" class="error"></div>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
 
     <footer>
       <nav>
